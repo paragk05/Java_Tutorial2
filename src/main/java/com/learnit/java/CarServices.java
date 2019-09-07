@@ -5,11 +5,16 @@ import org.slf4j.LoggerFactory;
 
 public class CarServices
 {
-    private final Logger log= LoggerFactory.getLogger(CarServices.class);
 
-    public void process(String input)
+    public void drive()
     {
-        CarState carState=CarState.from(input);
-        System.out.println("Valid States :"+carState);
+
+        Car [] cars={ new BMW(),new Porsche(),new Mercedes()};
+
+        for (Car car:cars)
+        {
+          car.drive();
+        }
+
     }
 }

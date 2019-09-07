@@ -6,10 +6,16 @@ import org.junit.Test;
 
 public class CarServicesTest
 {
+//    @Test
+//    public void shouldDemonstrateLogging()
+//    {
+//        CarServices carServices=new CarServices();
+//        carServices.process("BMW");
+//    }
     @Test
-    public void shouldDemonstrateLogging()
+    public void shouldDemonstrateInterface()
     {
         CarServices carServices=new CarServices();
-        carServices.process("BMW");
+        carServices.drive();
     }
 }
