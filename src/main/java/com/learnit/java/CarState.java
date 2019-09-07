@@ -1,4 +1,8 @@
 package com.learnit.java;
 
-public class CarState {
+public enum CarState
+{
+    DRIVING, WAITING, PARKING;
+
+
 }

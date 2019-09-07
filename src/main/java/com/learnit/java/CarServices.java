@@ -9,6 +9,7 @@ public class CarServices
 
     public void process(String input)
     {
-        log.warn("processing car : {}",input);
+        CarState carState=CarState.from(input);
+        System.out.println("Valid States :"+carState);
     }
 }
