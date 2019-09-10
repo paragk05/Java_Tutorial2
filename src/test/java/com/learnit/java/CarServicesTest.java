@@ -12,10 +12,20 @@ public class CarServicesTest
 //        CarServices carServices=new CarServices();
 //        carServices.process("BMW");
 //    }
-    @Test
-    public void shouldDemonstrateInterface()
+//    @Test
+//    public void shouldDemonstrateInterface()
+//    {
+//        CarServices carServices=new CarServices();
+//        carServices.drive();
+//    }
+    public static void main(String[] args)
     {
-        CarServices carServices=new CarServices();
-        carServices.drive();
+        try
+        {
+          new Object().finalize();
+
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 }
