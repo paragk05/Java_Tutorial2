@@ -2,14 +2,27 @@ package com.learnit.java;
 
 public class Porsche implements Car
 {
-    IOReader ioReader= new IOReader();
+    public Porsche(String parag) {
+    }
+
+    public Porsche() {
+
+    }
+
     public void drive()
     {
         System.out.println("Porsche driving");
     }
 
-    public void finalize()
+    @Override
+    public Porsche clone()
     {
-        ioReader.close();
+        try {
+            return (Porsche)super.clone();
+        } catch (CloneNotSupportedException e) {
+
+            throw new AssertionError();
+        }
     }
+
 }

@@ -22,7 +22,7 @@ public class CarServicesTest
     {
         try
         {
-          new Object().finalize();
+     //     new Object().finalize();
 
         } catch (Throwable throwable) {
             throwable.printStackTrace();
